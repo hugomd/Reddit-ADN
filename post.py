@@ -18,7 +18,7 @@ while True:
         continue
 
     while submission.id in already_done:
-        submission=next(r.get_front_page(limit=1, params={'after':"t3_"+submission.id }),None)
+        submission=next(r.get_front_page(limit=1, params={'before':"t3_"+submission.id }),None)
         if not submission:
             break
     if submission:
