@@ -6,4 +6,4 @@ To get started, add your own token:
 And then run:
 <code>python post.py</code>
 
-Everything should work from there.
+Big thanks to [@duerig](http://alpha.app.net/duerig/) for making (Dev Lite)[http://jonathonduerig.com/dev-lite/]!
