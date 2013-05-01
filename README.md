@@ -6,5 +6,5 @@ To get started, add your own token:
 And then run:
 <code>python post.py</code>
 
-Big thanks to [@duerig](http://alpha.app.net/duerig/) for making [Dev Lite](http://jonathonduerig.com/dev-lite/)!
+Big thanks to [@duerig](http://alpha.app.net/duerig/) for making [Dev Lite](http://jonathonduerig.com/dev-lite/)!  
 I should also mention that this uses [@simondlr](http://alpha.app.net/simondlr)'s Python Wrapper!
