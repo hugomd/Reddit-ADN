@@ -1,5 +1,5 @@
 from appdotnet import *
-import praw, time
+import praw, time, urllib
 
 #Set a user agent, this can be your app name or a description of your app.
 r = praw.Reddit(user_agent='USERAGENT')
@@ -10,14 +10,14 @@ app = appdotnet(access_token="token")
 already_done = set()
 
 #Get the submissions and post them to App.net
-while urllib.urlopen("http://reddit.com/").getcode() = 200:
+while urllib.urlopen("http://reddit.com/").getcode() == 200:
     l = r.get_top(limit=1)
     submission = next(l,None)
 
     if not submission: 
         continue
 
-    while submission.id in already_done:
+    while submission.id in already_done and urllib.urlopen("http://reddit.com/").getcode() = 200:
         submission=next(r.get_front_page(limit=1, params={'before':"t3_"+submission.id }),None)
         if not submission:
             break
