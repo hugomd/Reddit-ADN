@@ -17,7 +17,7 @@ while urllib.urlopen("http://reddit.com/").getcode() == 200:
     if not submission: 
         continue
 
-    while submission.id in already_done and urllib.urlopen("http://reddit.com/").getcode() = 200:
+    while submission.id in already_done and urllib.urlopen("http://reddit.com/").getcode() == 200:
         submission=next(r.get_front_page(limit=1, params={'before':"t3_"+submission.id }),None)
         if not submission:
             break
