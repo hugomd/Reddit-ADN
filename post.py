@@ -10,7 +10,7 @@ app = appdotnet(access_token="token")
 already_done = set()
 
 #Get the submissions and post them to App.net
-while True:
+while urllib.urlopen("http://reddit.com/").getcode() = 200:
     l = r.get_top(limit=1)
     submission = next(l,None)
 
