@@ -5,7 +5,7 @@ import praw, time, urllib
 r = praw.Reddit(user_agent="USERAGENT")
 
 #Obviously, put your own access token here. If you don't have a developer account, grab a token from Dev Lite, thanks @duerig
-app = appdotnet(access_token="token")
+app = appdotnet(access_token="authtoken")
 
 already_done = set()
 
@@ -48,4 +48,4 @@ while urllib.urlopen("http://reddit.com/").getcode() == 200:
 
             save_state = (id)
             add_id_to_file(submission.id)
-            time.sleep(600)
+    time.sleep(600)
